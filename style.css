@@ -40,6 +40,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  background-color: var(--Verylightgray);
 }
 
 .card {
@@ -73,7 +75,7 @@ body {
 
 h2 {
   margin: 20px 0;
-  color: white;
+  color: var(--Verylightgray);
   font-family: var(--BigShouldersDisplay);
   text-transform: uppercase;
   font-size: 3.5rem;
@@ -91,7 +93,7 @@ button {
   height: 50px;
   margin-top: 80px;
   border: none;
-  background-color: white;
+  background-color: var(--Verylightgray);
   border-radius: 40px;
 
   font-size: 1.5rem;
@@ -120,4 +122,13 @@ button:active {
 
 .btn-3 {
   color: var(--Verydarkcyan);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  .card {
+    flex-direction: column;
+  }
 }
